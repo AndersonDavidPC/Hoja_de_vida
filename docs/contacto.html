@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+</head>
+<body>
+  <form action="https://formspree.io/f/xeqpypod" method="post" accept-charset="utf-8">
+    <label for="name">
+      <span>Nombre: </span>
+      <input type="text" name="name" placeholder="Tu nombre" required id="name" autocomplete="name"/>
+    </label><br>
+    <label for="email-subject">
+      <span>Asunto: </span>
+      <input type="text" name="_subject" placeholder="Asunto" required id="email-subject" list="asuntos"/>
+      <datalist id="asuntos">
+        <option value="Programación Web 1155606-A"></option>
+        <option value="Programación Web 1155606-E"></option>
+      </datalist>
+    </label><br>
+    <label for="email-address">
+      <span>Email: </span>
+      <input type="email" name="_replyto" placeholder="ejemplo@mail.com" required id="email-address" autocomplete="email"/>
+    </label><br>
+    <label for="message">
+      <span>Mensaje: </span><br>
+      <textarea name="message" id="message" placeholder="Tu mensaje" required rows="5" cols="80"></textarea>
+    </label><br>
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
